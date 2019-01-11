@@ -1,0 +1,21 @@
+extends ../../_component/layout/template
+
+block cool-config
+  - 
+    var myTitle = "HTML Elements"
+    var myDescription = "An HTML element usually consists of a start tag and end tag, with the content inserted in between."
+    var landingPage = 'HTML';
+    var activeLink = '';
+
+block awesome-content
+  h1=myTitle
+  h5=myDescription
+  h2 Nested HTML Elements
+  p HTML elements can be nested (elements can contain elements).
+    | <br />All HTML documents consist of nested HTML elements.
+  h2 Do Not Forget the End Tag 
+  p Some HTML elements will display correctly, even if you forget the end tag.
+  h2 Empty HTML Elements
+  p HTML elements with no content are called empty elements.
+  h2 Use Lowercase Tags
+  p The HTML5 standard does not require lowercase tags, but W3C recommends lowercase in HTML, and demands lowercase for stricter document types like XHTML.
