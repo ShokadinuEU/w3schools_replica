@@ -1,0 +1,20 @@
+extends ../../_component/layout/template
+
+block cool-config
+  - 
+    var myTitle = "HTML Paragraphs"
+    var myDescription = "Browsers automatically add some white space (a margin) before and after a paragraph."
+    var landingPage = 'HTML';
+    var activeLink = '/html/paragraphs';
+
+block awesome-content
+  h1=myTitle
+  h5=myDescription
+  h2 HTML Display
+  p You cannot be sure how HTML will be displayed.
+  | <br /> Large or small screens, and resized windows will create different results. 
+  h2 Don't Forget the End Tag
+  p Most browsers will display HTML correctly even if you forget the end tag.
+  h2 HTML Tag Reference
+  p W3Schools' tag reference contains additional information about HTML elements and their attributes.
+
