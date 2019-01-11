@@ -1,0 +1,23 @@
+extends ../../_component/layout/template
+
+block cool-config
+  - 
+    var myTitle = "CSS Borders"
+    var myDescription = "The CSS border properties allow you to specify the style, width, and color of an element's border."
+    var landingPage = 'CSS';
+    var activeLink = '/css/borders';
+
+block awesome-content
+  h1=myTitle
+  h5=myDescription
+  h2 Border Style
+  p The border-style property specifies what kind of border to display.
+  p The border-style property can have from one to four values (for the top border, right border, bottom border, and the left border).
+  h2 Border Width
+  p The width can be set as a specific size (in px, pt, cm, em, etc) or by using one of the three pre-defined values: thin, medium, or thick.
+  p The border-width property can have from one to four values (for the top border, right border, bottom border, and the left border).
+  h2 Border Color
+  p The border-color property is used to set the color of the four borders.
+  p The border-color property can have from one to four values (for the top border, right border, bottom border, and the left border). 
+  h2 Border - Individual Sides
+  p In CSS, there are also properties for specifying each of the borders (top, right, bottom, and left)

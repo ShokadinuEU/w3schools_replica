@@ -1,0 +1,21 @@
+extends ../../_component/layout/template
+
+block cool-config
+  - 
+    var myTitle = "CSS Backgrounds"
+    var myDescription = "The CSS background properties are used to define the background effects for elements."
+    var landingPage = 'CSS';
+    var activeLink = '/css/backgrounds';
+
+block awesome-content
+  h1=myTitle
+  h5=myDescription
+  h2 Background Color
+  p The background-color property specifies the background color of an element.
+  h2 Background Image
+  p The background-image property specifies an image to use as the background of an element.
+    | <br />By default, the image is repeated so it covers the entire element.
+  h2 Background - Shorthand property
+  p o shorten the code, it is also possible to specify all the background properties in one single property. This is called a shorthand property.
+  h2 Background Image - Fixed position
+  p To specify that the background image should be fixed (will not scroll with the rest of the page), use the background-attachment property

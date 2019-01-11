@@ -1,0 +1,24 @@
+extends ../../_component/layout/template
+
+block cool-config
+  - 
+    var myTitle = "JavaScript HTML DOM Events"
+    var myDescription = "HTML DOM allows JavaScript to react to HTML events"
+    var landingPage = 'JavaScript';
+    var activeLink = '/javascript/events';
+
+block awesome-content
+  h1=myTitle
+  h5=myDescription
+  h2 Reacting to Events
+  p A JavaScript can be executed when an event occurs, like when a user clicks on an HTML element.
+  h2 HTML Event Attributes
+  p To assign events to HTML elements you can use event attributes.
+    | <br /> < button onclick="displayDate()">Try it</ button > 
+  h2 Assign Events Using the HTML DOM
+  p The HTML DOM allows you to assign events to HTML elements using JavaScript:
+  |  < script> <br />
+  |   document.getElementById("myBtn").onclick = displayDate;<br />
+  |  < /script> 
+  h2 The onload and onunload Events
+  p The onload event can be used to check the visitor's browser type and browser version, and load the proper version of the web page based on the information.

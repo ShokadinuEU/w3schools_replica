@@ -1,0 +1,32 @@
+extends ../../_component/layout/template
+
+block cool-config
+  - 
+    var myTitle = "Javascript HTML"
+    var myDescription = "JavaScript HTML DOM Elements"
+    var landingPage = 'JavaScript';
+    var activeLink = '/javascript/html';
+
+block awesome-content
+  h1=myTitle
+  h5=myDescription
+  h2 Finding HTML Elements
+  p To do so, you have to find the elements first. There are several ways to do this:
+  ul
+    li Finding HTML elements by id
+    li Finding HTML elements by tag name
+    li Finding HTML elements by class name
+    li Finding HTML elements by CSS selectors
+    li Finding HTML elements by HTML object collections
+  h2 Finding HTML Element by Id
+  p The easiest way to find an HTML element in the DOM, is by using the element id.
+    | <br />This example finds the element with id="intro".
+  h2 Finding HTML Elements by Tag Name
+  p This example finds all < p > elements:
+    | var x = document.getElementsByTagName("p"); 
+  h2 Finding HTML Elements by Class Name
+  p If you want to find all HTML elements with the same class name, use getElementsByClassName()
+  h2 Finding HTML Elements by CSS Selectors
+  p If you want to find all HTML elements that match a specified CSS selector (id, class names, types, attributes, values of attributes, etc), use the querySelectorAll() method.
+  h2 Finding HTML Elements by HTML Object Collections
+  p This example finds the form element with id="frm1", in the forms collection, and displays all element values.

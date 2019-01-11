@@ -1,0 +1,33 @@
+extends ../../_component/layout/template
+
+block cool-config
+  - 
+    var myTitle = "CSS Margins"
+    var myDescription = "With CSS, you have full control over the margins. There are properties for setting the margin for each side of an element (top, right, bottom, and left)"
+    var landingPage = 'CSS';
+    var activeLink = '/css/margins';
+
+block awesome-content
+  h1=myTitle
+  h5=myDescription
+  h2 Margin - Individual Sides
+  p CSS has properties for specifying the margin for each side of an element.
+  p All the margin properties can have the following values:
+  ul
+    li auto - the browser calculates the margin
+    li length - specifies a margin in px, pt, cm, etc.
+    li % - specifies a margin in % of the width of the containing element
+    li inherit - specifies that the margin should be inherited from the parent element
+  h2 Margin - Shorthand Property
+  p To shorten the code, it is possible to specify all the margin properties in one property.
+  p The margin property is a shorthand property for the following individual margin properties:
+  ul
+    li margin-top
+    li margin-right
+    li margin-bottom
+    li margin-left
+  h2 The auto Value
+  p You can set the margin property to auto to horizontally center the element within its container.
+  p The element will then take up the specified width, and the remaining space will be split equally between the left and right margins.
+  h2 The inherit Value
+  p This example lets the left margin of the < p class="ex1" > element be inherited from the parent element (< div >)
