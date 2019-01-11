@@ -1,0 +1,22 @@
+extends ../_component/layout/template
+
+block cool-config
+  - 
+    var myTitle = "What is CSS?"
+    var myDescription = "CSS describes how HTML elements are to be displayed on screen, paper, or in other media."
+    var landingPage = 'CSS';
+    var activeLink = '';
+
+block awesome-content
+  h1=myTitle
+  h5=myDescription
+  h2 Three Ways to Insert CSS
+  ul
+    li External style sheet
+    li Internal style sheet
+    li Inline style
+  h2 CSS Borders
+  p The CSS border properties allow you to specify the style, width, and color of an element's border.
+  h2 CSS Margins
+  p The CSS margin properties are used to create space around elements, outside of any defined borders.
+
